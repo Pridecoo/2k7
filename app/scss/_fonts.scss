@@ -1,9 +1,31 @@
 @font-face {
-  font-family: "";
+  font-family: "russo";
 
-  src: url("../fonts/") format("woff2"), 
-       url("../fonts/") format("woff");
-  font-weight: 400;
+  src: url("../fonts/RussoOne-Regular.woff2") format("woff2"), 
+       url("../fonts/RussoOne-Regular.ttf") format("ttf");
   font-display: swap;
 }
 
+@font-face {
+  font-family: "gloria";
+
+  src: url("../fonts/GloriaHallelujah-Regular.woff2") format("woff2"), 
+       url("../fonts/GloriaHallelujah-Regular.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "lato";
+
+  src: url("../fonts/Lato-Regular.woff2") format("woff2"), 
+       url("../fonts/Lato-Regular.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "gothic";
+
+  src: url("../fonts/GrenzeGotisch-Regular.woff2") format("woff2"), 
+       url("../fonts/GrenzeGotisch-Regular.ttf") format("ttf");
+  font-display: swap;
+}

@@ -17,5 +17,49 @@ a {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 25px;
+}
+
+body {
+  font-family: "gloria";
+  color: #fff;
+  background-color: #020e15;
+}
+
+section {
+  position: relative;
+  z-index: 3;
+  background-color: $dark-blue-bg;
+  border-right: 1px solid #2a71b470;
+  border-left: 1px solid #2a71b470;
+}
+
+.button {
+  padding: 10px 18px 9px;
+  color: #fff;
+  background-color: #0a203577;
+  border: none;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: all .4s;
+
+  &:hover {
+    border-color: $blue;
+  }
+
+  &:active {
+    color: $pink;
+  }
+}
+
+.content-text {
+  color: #c0cfcf;
+  font-family: "lato", sans-serif;
+  line-height: 140%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 60px 0px #050505;
 }
