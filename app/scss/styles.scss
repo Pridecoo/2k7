@@ -133,16 +133,15 @@
 }
 
 .about {
-  background-color: #06151f;
+  background-color: $blue-bg;
 
   &__inner {
     padding: 60px 0 100px;
-    // border-bottom: 1px solid $border;
   }
 
   &__text {
     max-width: 70%;
-    margin: 10px auto;
+    margin: 10px auto 22px;
 
   }
 }
@@ -270,7 +269,7 @@
 }
 
 .services {
-  background-color: #06151f;
+  background-color: $blue-bg;
 
   &__inner {
     padding: 60px 0 100px;
@@ -366,7 +365,7 @@
 }
 
 .contact {
-  background-color: #06151f;
+  background-color: $blue-bg;
 
   &__inner {
     padding: 60px 0 100px;
@@ -426,6 +425,10 @@
       min-height: 100%;
     }
   }
+
+  &__button {
+    font-size: 20px;
+  }
 }
 
 
@@ -443,11 +446,14 @@
   &__info {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     margin-bottom: 40px;
   }
 
   &__info-column {
     width: 40%;
+    min-width: 300px;
+    margin-right: 15px;
   }
 
   &__logo {
@@ -492,9 +498,15 @@
   }
 
   &__days {
-    width: 35%;
-    display: inline-block;
-    // text-align: right;
+    min-width: 135px;
+  }
+
+  &__hours {
+    min-width: 162px;
+  }
+
+  &__hours-info {
+    display: flex;
   }
 
   &__bottom {
@@ -502,10 +514,10 @@
     text-align: center;
     font-family: "lato";
     color: #262a4e;
-    background-color: #06151f;
+    background-color: $dark-blue-bg;
 
     a {
-      color: #3a7b77;
+      color: #2e5266;
     }
   }
 }
