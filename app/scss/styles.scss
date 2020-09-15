@@ -343,6 +343,7 @@
 }
 
 .social {
+  background-color: $blue-bg;
 
   &__inner {
     padding: 60px 0;
@@ -369,7 +370,7 @@
 }
 
 .contact {
-  background-color: $blue-bg;
+  background-color: $dark-blue-bg;
 
   &__inner {
     padding: 60px 0 100px;
