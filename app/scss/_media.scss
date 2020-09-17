@@ -1,0 +1,435 @@
+@media (max-width: 1025px) {
+  .menu {
+    &__list {
+      padding: 0;
+    }
+
+    &__item+&__item {
+      margin-left: 25px;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+
+  .header {
+
+    &__inner {
+      justify-content: start;
+      min-height: 65px;
+    }
+  }
+
+  .menu {
+    position: absolute;
+    top: -162px;
+    left: -26px;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 100vw;
+    background-color: #041018e3;
+    border-bottom: 1px solid #2a71b470;
+    transition: top .3s;
+
+    &.visible {
+      top: 62px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    &__item+&__item {
+      margin: 0;
+    }
+
+    &__link {
+      padding: 12px 10px;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  .logo {
+    transition: left .3s;
+
+    &__img {
+      height: 55px;
+    }
+
+    &.right {
+      left: calc(100% - 35px);
+    }
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .banner {
+    min-height: 450px;
+
+    &__logo {
+      right: 3%;
+      top: 125px;
+    }
+
+    &__title {
+      font-size: 150px;
+      letter-spacing: -39px;
+
+      span {
+        font-size: 162px;
+      }
+    }
+
+    &__suptitle {
+      margin: -46px 0 0;
+      font-size: 35px;
+    }
+
+    &__content {
+      max-width: 262px;
+      padding: 0 54px 0 0;
+      font-size: 20px;
+      text-align: center;
+      line-height: 29px;
+    }
+
+    &__slogan {
+      margin-bottom: 15px;
+    }
+
+    &__button {
+      width: 80%;
+    }
+  }
+
+  .about {
+    &__text {
+      max-width: 100%;
+    }
+  }
+
+  .section-title {
+    max-width: 45%;
+  }
+
+  .team {
+    &__card {
+      height: 420px;
+      width: 50%;
+      flex: 0 50%;
+
+      &:hover {
+        width: 65%;
+        min-width: 7%;
+
+        .team__name {
+          font-size: 24px;
+        }
+      }
+    }
+
+    &__items {
+      flex-wrap: wrap;
+    }
+
+    &__info {
+      bottom: 10%;
+    }
+  }
+
+  .social-link {
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .services {
+    &:after {
+      display: none;
+    }
+
+    &__item {
+      flex-direction: column;
+      border-bottom: 1px solid $pink;
+      margin-bottom: 60px;
+
+      &:last-child {
+        border-color: $blue;
+      }
+      
+      &--beard {
+        .services__title {
+          text-align: right;
+        }
+      }
+    }
+
+    &__content {
+      width: 100%;
+      padding: 0 0 30px;
+      text-align: center;
+      border: none;
+      border-bottom: 1px solid #163f62;
+    }
+    
+    &__text {
+      max-width: 100%;
+    }
+
+    &__title {
+      text-align: left;
+    }
+
+    &__image {
+      max-width: 450px;
+      margin: 0 auto;
+    }
+  }
+
+  .reviews {
+    &__inner {
+      padding-top: 0;
+    }
+
+    &__image {
+      min-width: 150px;
+      height: 150px;
+      margin: 0 auto;
+      padding: 0;
+      border-radius: 50%;
+      border: none;
+    }
+   
+    .swiper-container {
+      min-height: 390px;
+      max-height: 420px;
+    }
+
+    .swiper-slide {
+      flex-direction: column;
+
+      &--right {
+        flex-direction: column-reverse;
+      }
+    }
+
+    &__content {
+      margin-top: 30px;
+    }
+
+    &__text {
+      padding: 20px 15px;
+    }
+
+    &__author {
+      padding-bottom: 20px;
+    }
+
+    &__content {
+      border-radius: 8px;
+    }
+  }
+
+  .contact {
+    &__inner {
+      padding: 60px 0 30px;
+    }
+
+    &__items {
+      flex-direction: column;
+    }
+
+    &__form {
+      width: 100%;
+      margin-bottom: 50px;
+      padding: 0 15px;
+    }
+
+    &__map {
+      width: 100%;
+    }
+  }
+
+  .social {
+    .social-link {
+      svg {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+
+  .footer {
+    &__info-column {
+      width: 100%;
+      margin: 0 0 20px;
+    }
+  }
+}
+
+@media (max-width: 481px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .menu {
+    left: -16px;
+  }
+
+  .banner {
+    &__logo {
+      right: -80px;
+    }
+
+    min-height: 350px;
+
+    &__title,
+    &__suptitle {
+      padding-left: 11px;
+    }
+
+    &__title {
+      font-size: 120px;
+      letter-spacing: -31px;
+
+      span {
+        font-size: 132px;
+      }
+    }
+
+    &__suptitle {
+      margin: -38px 0 0;
+      font-size: 27px;
+    }
+
+    &__content {
+      max-width: 262px;
+      padding: 0 54px 0 0;
+      font-size: 20px;
+      text-align: center;
+      line-height: 29px;
+
+      span {
+        display: none;
+      }
+    }
+
+    &__button {
+      display: none;
+    }
+
+    &__slogan {
+      margin-bottom: 15px;
+    }
+
+    &__button {
+      width: 80%;
+    }
+  }
+
+  .about {
+    &__inner {
+      padding: 60px 0;
+    }
+  }
+
+  .section-title {
+    max-width: 75%;
+  }
+
+  .team {
+    &__card {
+      height: 310px;
+    }
+
+    &__items {
+      width: calc(100% + 30px);
+      margin-left: -15px;
+    }
+
+    &__inner {
+      padding: 60px 0;
+    }
+  }
+
+  .section-title--right {
+    &:after {
+    position: absolute;
+    right: -15px;
+    bottom: 0;
+    content: "";
+    width: 70%;
+    height: 1px;
+    background-color: #F60CA7;
+    }
+  }
+
+  .services {
+
+    &__heading {
+      margin-bottom: 55px;
+    }
+
+    &__inner {
+      padding: 60px 0;
+    }
+
+    &__title {
+      margin-bottom: 5px;
+      font-size: 27px;
+    }
+
+    &__prices {
+      padding-top: 15px;
+    }
+  }
+
+  .reviews {
+    &__inner {
+      padding: 60px 15px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+
+    &__content {
+      margin-top: 15px;
+    }
+    
+    
+  }
+
+  .section-title {
+    &--right {
+      &:after {
+        right: -15px !important;
+      }
+    }
+  }
+
+  .social {
+    .social-link {
+      svg {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+
+  .footer {
+    &__info{
+      margin: 0 0 20px;
+    }
+  }
+}
